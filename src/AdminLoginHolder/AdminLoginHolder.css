@@ -1,0 +1,20 @@
+.appLoginHolderContainer {
+    
+    width: 100%;
+    
+    text-align: center;
+}
+
+.appLoginCard {
+    width: calc(100% - 10px);
+    max-width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+}
+
+.credentialsInput {
+    width: 100%;
+}

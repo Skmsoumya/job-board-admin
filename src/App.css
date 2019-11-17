@@ -5,4 +5,33 @@
 button.mobileNavButton {
   padding: 5px;
   margin: 7.5px;
+  height: 40px;
+  color: #333333;
+  background-color: #fff;
+}
+
+button.navbarButtons.lite {
+  color: #fff;
+  background: none;
+  width: calc(100% - 20px);
+  position: relative;
+}
+
+button.navbarButtons.lite::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  height: 2px;
+  width: 50%;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+button.navbarButtons.lite:hover, button.navbarButtons.lite:focus {
+  border: 2px solid #fff;
+}
+
+button.navbarButtons.lite:hover::after, button.navbarButtons.lite:focus::after {
+  display: none;
 }
