@@ -20,3 +20,10 @@
 .App-link {
   color: #09d3ac;
 }
+
+/* Reset default button styling */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}

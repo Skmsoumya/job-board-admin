@@ -1,0 +1,67 @@
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+/* Reset default button styling */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.appCommonButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #333333;
+    color: #fff; 
+    margin: 10px;
+}
+
+.appCommonButton:hover, .appCommonButton:focus {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.appCommonButton.primary {
+    background-color: red;
+}
+
+.appCommonButton.large {
+    font-size: 1.2em;
+}
+
+.appCommonButton.extra_large {
+    font-size: 1.42em;
+}
+
+.appCommonButton.primary_large {
+    background-color: red;
+    font-size: 1.2em;
+}
+
+.appCommonButton.primary_extra_large {
+    background-color: red;
+    font-size: 1.4em;
+}
