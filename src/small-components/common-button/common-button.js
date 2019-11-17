@@ -8,7 +8,7 @@ import "./common-button.css";
 function CommonButton(props) {
   return (
     <button className={"appCommonButton " + props.type} style={props.overrideStyles}>
-        {props.buttonText}
+        {props.children}
     </button>
   );
 }
