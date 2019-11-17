@@ -1,13 +1,13 @@
 import React from 'react';
 
-import "./common-button.css";
+import "./CommonButton.css";
 
 
 // Button has a special style. "primary"
 
 function CommonButton(props) {
   return (
-    <button className={"appCommonButton " + props.type} style={props.overrideStyles}>
+    <button className={`appCommonButton ${props.type ? props.type : ""} ${props.className ? props.className : ""}`} style={props.overrideStyles}>
         {props.children}
     </button>
   );
