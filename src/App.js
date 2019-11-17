@@ -9,6 +9,7 @@ import AppHeader from './small-components/AppHeader/AppHeader';
 import CommonButton from './small-components/CommonButton/CommonButton';
 import MobileNavbar from './small-components/MobileNavbar/MobileNavbar';
 import AdminLoginHolder from './AdminLoginHolder/AdminLoginHolder';
+import AdminDashboard from './AdminDashboard/AdminDashboard';
 
 function App() {
   return (
@@ -28,7 +29,9 @@ function App() {
           <CommonButton type="lite">Login</CommonButton>
         </AppHeader>
 
-        <AdminLoginHolder></AdminLoginHolder>
+        {/* <AdminLoginHolder></AdminLoginHolder> */}
+        <AdminDashboard></AdminDashboard>
+
 
         {/* <MobileNavbar 
           moblileNavCloseBtn={
