@@ -7,7 +7,7 @@ import "./AppHeader.css";
 
 function AppHeader(props) {
   return (
-    <header>
+    <header className="appHeader">
         <span className="brandInfo">
             <a href={props.headerLogoLink ? props.headerLogoLink : "/" }>
                 <span className="brandLogoImage">

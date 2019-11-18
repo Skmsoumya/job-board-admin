@@ -35,3 +35,11 @@ button.navbarButtons.lite:hover, button.navbarButtons.lite:focus {
 button.navbarButtons.lite:hover::after, button.navbarButtons.lite:focus::after {
   display: none;
 }
+
+.appHeader {
+  z-index: 10;
+}
+
+.contentPaper {
+  padding: 10px;
+}

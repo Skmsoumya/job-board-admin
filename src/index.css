@@ -5,10 +5,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  font-size: 62.5%;
 }
 
-* {
-  font-size: 20px;
+@media only screen and (max-width: 1080px){
+  body {
+    font-size: 62.5%;
+  }
 }
 
 code {
@@ -17,11 +21,11 @@ code {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h2.non_bold {
@@ -29,7 +33,7 @@ h2.non_bold {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h3.non_bold {
@@ -37,7 +41,7 @@ h3.non_bold {
 }
 
 h4 {
-  font-size: 1.33em;
+  font-size: 1.33rem;
 }
 
 h4.non_bold {
@@ -45,5 +49,5 @@ h4.non_bold {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1rem;
 }

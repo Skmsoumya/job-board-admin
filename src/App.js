@@ -10,15 +10,68 @@ import CommonButton from './small-components/CommonButton/CommonButton';
 import MobileNavbar from './small-components/MobileNavbar/MobileNavbar';
 import AdminLoginHolder from './AdminLoginHolder/AdminLoginHolder';
 import AdminDashboard from './AdminDashboard/AdminDashboard';
+import AppContent from './AppContent/AppContent';
+
+import AdminJobsToModerate from './AdminJobsToModerate/AdminJobsToModerate';
 
 function App() {
+
+  let jobsToModerate = [
+    {
+      company: {
+        companyLogo: "/logo192.png",
+        companyName: "Super Company",
+      },
+      jobTitle: "Senior React Developer",
+      jobType: "Fulltime",
+      timeOverlap: "5 hours",
+      jobPostDate: "15th November 2019",
+      _jobId: "1"
+    },
+    {
+      company: {
+        companyLogo: "/logo192.png",
+        companyName: "Super Company",
+      },
+      jobTitle: "Senior React Developer",
+      jobType: "Fulltime",
+      timeOverlap: "5 hours",
+      jobPostDate: "15th November 2019",
+      _jobId: "2"
+    },
+    {
+      company: {
+        companyLogo: "/logo192.png",
+        companyName: "Super Company",
+      },
+      jobTitle: "Senior React Developer",
+      jobType: "Fulltime",
+      timeOverlap: "5 hours",
+      jobPostDate: "15th November 2019",
+      _jobId: "3"
+    },
+    {
+      company: {
+        companyLogo: "/logo192.png",
+        companyName: "Super Company",
+      },
+      jobTitle: "Senior React Developer",
+      jobType: "Fulltime",
+      timeOverlap: "5 hours",
+      jobPostDate: "15th November 2019",
+      _jobId: "4"
+    },
+  ];
+
+
   return (
     <div className="App">
       <React.Fragment>
         <CssBaseline />
 
 
-        <AppHeader  logoLink="/logo192.png" 
+        <AppHeader  className="appHeader"
+                    logoLink="/logo192.png" 
                     brandName="Remote Jobs"
                     mobileNav={
                       <CommonButton className="mobileNavButton">
@@ -28,9 +81,14 @@ function App() {
 
           <CommonButton type="lite">Login</CommonButton>
         </AppHeader>
+        
+        <AppContent>
+          {/* <AdminLoginHolder></AdminLoginHolder> */}
+          {/* <AdminDashboard></AdminDashboard> */}
 
-        {/* <AdminLoginHolder></AdminLoginHolder> */}
-        <AdminDashboard></AdminDashboard>
+          <AdminJobsToModerate jobs={jobsToModerate}></AdminJobsToModerate>
+        </AppContent>
+        
 
 
         {/* <MobileNavbar 

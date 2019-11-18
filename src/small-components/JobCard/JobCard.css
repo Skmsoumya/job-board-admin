@@ -1,0 +1,175 @@
+.jobWideCard {
+    margin: 10px auto;
+    display: flex;
+    max-width: 800px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.jobWideCard:hover {
+    cursor: pointer;
+}
+
+.jobWideCard .CompanyDetailsHolder{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.companyLogoHolder {
+    width: 4rem;
+    height: 4rem;
+    /* padding: 20px; */
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 50px;
+    background: #ffffff;
+    border: 1px solid #333;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.companyImage {
+    max-width: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+}
+
+
+.JobAdditionalDetails p {
+    margin: 0px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.jobTitle {
+    font-size: 1.17rem;
+    margin: 6px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% - 100px);
+}
+
+.companyName {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.dateHolder {
+    font-size: 0.8rem;
+}
+
+.PostAdditionalAction {
+    display: flex;
+}
+
+.additionalDetailsHolder {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.JobAdditionalDetails {
+    margin-bottom: 10px;
+}
+
+.dateHolder {
+    margin-right: 5rem;
+    margin-left: 2rem;
+    white-space: nowrap;
+}
+
+.newTag {
+    margin: 10px;
+    min-width: 100px;
+}
+
+
+.newTag span {
+    padding: 2px 5px;
+    border-radius: 40px;
+    /* flex: 0 0 0px; */
+    /* min-height: 10px; */
+    width: fit-content;
+    margin: 0 auto;
+    /* min-width: 0px; */
+    background: yellow;
+    color: black;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.titleAndDetailsHolder {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1080px){
+    .companyImage {
+        transform: translate3d(-50%, -50%, 0px);
+    }   
+}
+
+@media only screen and (max-width: 650px){
+    div.companyIdentity {
+        display: none;
+    } 
+    div.CompanyDetailsHolder {
+        margin-left: 10px;
+    }  
+
+    p {
+        font-size: 0.8rem;
+    }
+
+
+    .jobTitle {
+        font-size: 1rem;
+        flex-grow: 5;
+        margin: 3px;
+        margin-left: 0px;
+        margin-right: 10px;
+        /* white-space: nowrap; */
+        /* white-space: nowrap; */
+        text-overflow: ellipsis;
+    }
+
+    .PostAdditionalAction .newTag {
+        min-width: 60px;
+        margin: 3px;
+    }
+
+    .PostAdditionalAction .dateHolder {
+        margin: 0px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .PostAdditionalAction .dateHolder, .PostAdditionalAction .newTag span {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 450px) { 
+    .PostAdditionalAction {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .titleAndDetailsHolder {
+        height: 30px;
+        overflow: visible;
+
+    }
+
+    .jobTitle {
+        font-size: 1rem;
+    }
+}
